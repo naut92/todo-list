@@ -9,7 +9,7 @@ import java.util.List;
 public interface TaskMapper {
 
     String GET_ALL_TASK = "SELECT * FROM task";
-    String SELECT_BY_ID = "SELECT * FROM task WERE id = #{id}";
+    String SELECT_BY_ID = "SELECT * FROM task WHERE id = #{id}";
     String INSERT_TASK = "INSERT into task(heading, text, date_added, edit_date, status) VALUES(#{heading}, #{text}, #{date_added}, #{edit_date}, #{status})";
     String UPDATE_TASK = "UPDATE task SET heading=#{heading}, text=#{text}, date_added=#{date_added}, edit_date=#{edit_date}, status=#{status} WHERE id = #{id}";
     String DELETE_TASK = "DELETE FROM task WHERE id = #{id}";
