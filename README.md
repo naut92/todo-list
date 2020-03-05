@@ -35,7 +35,9 @@ curl -X DELETE http://localhost:8091/delete/4
 
 Перед стартом приложния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически).
 
-фронтентд: https://github.com/naut92/task-list-front
+фронтентд: cd src, cd main, cd webapp, выполнить yarn install, 
+
+запустить сервер: yarn start
 
 
 
