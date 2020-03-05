@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collection;
 
@@ -33,19 +32,18 @@ public class TaskController {
     }
 
     @PutMapping("/upd/{taskId}")
-    public ResponseEntity<Task> updateEmployee(@PathVariable Long taskId, @Valid @RequestBody Task task) {
+    public ResponseEntity<Task> updateEmployee(@Valid @RequestBody Task task/*, @PathVariable Long taskId*/) {
         log.warn("Request to update Task={}", task);
-        Task result = service.updateTask(taskId, task);
-        return ResponseEntity.ok().body(result);
+        service.updateTask(task/*, taskId*/);
+        return ResponseEntity.ok().build();
     }
 
     @PostMapping("/task/new")
     public ResponseEntity<Task> createTask
             (@Valid @RequestBody Task task) throws URISyntaxException {
         log.warn("Request to create Task={}", task);
-        Task result = service.insertTask(task);
-        return ResponseEntity.created(new URI("/task/" + result.getId()))
-                .body(result);
+        service.insertTask(task);
+        return ResponseEntity.ok().build();
     }
 
     @DeleteMapping("/delete/{taskId}")

@@ -47,29 +47,24 @@ public class TaskServiceImpl implements TaskMapper {
     }
 
     @Override
-    public Task insertTask(Task task) {
+    public void insertTask(Task task) {
         session = sqlSessionFactory.openSession();
         try {
             mapper = session.getMapper(TaskMapper.class);
             mapper.insertTask(task);
             session.commit();
-            long num = mapper.getTaskList().size();
-            log.info("new ID Todo: " + (num));
-            return mapper.getTaskById(num);
         } finally {
             session.close();
         }
     }
 
     @Override
-    public Task updateTask(Long todoId, Task task) {
+    public void updateTask(Task task/*, Long taskId*/) {
         session = sqlSessionFactory.openSession();
         try {
             mapper = session.getMapper(TaskMapper.class);
-            mapper.updateTask(todoId, task);
+            mapper.updateTask(task/*, taskId*/);
             session.commit();
-            log.info("upd Todo: " + mapper.getTaskById(todoId));
-            return mapper.getTaskById(todoId);
         } finally {
             session.close();
         }

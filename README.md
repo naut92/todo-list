@@ -27,10 +27,17 @@
 
 реализовано:
 
-MyBatis, SpringBoot, H2, ReactJS, Gradle, server-port: 8091 
+SpringBoot, MyBatis, H2, ReactJS, Gradle, server-port: 8091 
 
 #Task Controller:
 
 curl -X DELETE http://localhost:8091/delete/4
 
-перед стартом приложния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически)
+Перед стартом приложния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически).
+
+фронтентд: https://github.com/naut92/task-list-front
+
+
+
+
+./gradlew clean build

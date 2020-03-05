@@ -37,7 +37,7 @@ public interface TaskMapper {
      */
     @Insert(INSERT_TASK)
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn="id")
-    Task insertTask(Task task);
+    void insertTask(Task task);
 
     /**
      * Updates an instance of Task in the database.
@@ -45,7 +45,7 @@ public interface TaskMapper {
      * @return true if transaction successful.
      */
     @Update(UPDATE_TASK)
-    Task updateTask(Long taskId, Task task);
+    void updateTask(Task task/*, Long taskId*/);
 
     /**
      * Delete an instance of Task from the database.

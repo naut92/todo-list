@@ -9,7 +9,6 @@ create table task(
     status VARCHAR(250)
 );
 
-
 INSERT INTO task (heading, text, date_added, edit_date, status) VALUES
 ('heading1', 'text1', '01-03-2020', '02-03-2020', 'done'),
 ('heading2', 'text2', '02-03-2020', '04-03-2020', 'new'),
