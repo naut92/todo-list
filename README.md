@@ -33,7 +33,7 @@ SpringBoot, MyBatis, H2, ReactJS, Gradle, server-port: 8091
 
 curl -X DELETE http://localhost:8091/delete/4
 
-Перед стартом приложния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически).
+Перед стартом приложeния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически).
 
 фронтентд: cd src, cd main, cd webapp, выполнить yarn install, 
 

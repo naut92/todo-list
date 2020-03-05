@@ -1,7 +1,6 @@
 package com.consul_media.task_list.service;
 
 import com.consul_media.task_list.mappers.TaskMapper;
-import com.consul_media.task_list.model.Task;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Service;
@@ -11,7 +10,7 @@ import java.io.IOException;
 import java.io.Reader;
 
 /**
- * MyBatis Connection Factory, which reads the configuration data from a XML file.
+ * MyBatis Connection Factory, reads the configuration data from XML file.
  * 
  * @author naut
  *
