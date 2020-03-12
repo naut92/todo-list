@@ -102,7 +102,6 @@ class TaskEdit extends Component {
             </Container>
         </div>
     }
-
 }
 
 export default withRouter(TaskEdit);

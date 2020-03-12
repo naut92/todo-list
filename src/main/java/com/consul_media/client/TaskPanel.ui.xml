@@ -1,0 +1,102 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:style>
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #E9EAED;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        .todo-panel {
+            background-color: #FFFFFF;
+            width: 480px;
+            padding: 20px;
+            box-shadow: 0 0 10px 1px #C9C9C9;
+            border-radius: .25rem
+        }
+
+        .header {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            width: 100%;
+            padding-top: 20px;
+            flex-direction: row;
+        }
+
+        .input-group-text {
+            width: 100%;
+            border: 1px solid #CCC;
+            padding: .375rem .75rem;
+            border-radius: .25rem 0 0 .25rem;
+            border-right: 0;
+        }
+
+        .input-group-button {
+            padding: 0.375rem 0.75rem;
+            color: #FFF;
+            background-color: #0275d8;
+            border: 1px solid #0275d8;
+            border-radius: 0 .25rem .25rem 0;
+            cursor: pointer;
+        }
+
+        .input-group-button:hover {
+            background-color: #025aa5;
+            border-color: #01549b;
+        }
+
+        .input-group-button:active {
+            background-color: #014682;
+            border-color: #01315a;
+        }
+
+        .footer {
+            color: gray;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel addStyleNames="{style.center}">
+        <div class="{style.todo-panel}">
+            <h1 class="{style.header}">Todos</h1>
+
+            <g:FlowPanel ui:field="taskList">
+            </g:FlowPanel>
+
+            <div class="{style.input-group}">
+                <g:TextBox ui:field="taskTextBox" addStyleNames="{style.input-group-text}"/>
+                <g:Button ui:field="addTaskButton" addStyleNames="{style.input-group-button}">Add</g:Button>
+            </div>
+        </div>
+        <a class="{style.footer}" href="https://github.com/feedm3/spring-boot-gwt" target="_blank">Data refresh every 15
+            minutes. © 2015 Fabian Dietenberger
+        </a>
+    </g:HTMLPanel>
+</ui:UiBinder>

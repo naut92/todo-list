@@ -1,4 +1,4 @@
-package com.consul_media.task_list.util;
+package com.consul_media.server.util;
 
 import org.apache.ibatis.jdbc.SQL;
 

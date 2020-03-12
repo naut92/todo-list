@@ -1,4 +1,4 @@
-package com.consul_media.task_list;
+package com.consul_media;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

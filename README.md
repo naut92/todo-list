@@ -27,7 +27,7 @@
 
 реализовано:
 
-SpringBoot, MyBatis, H2, ReactJS, Gradle, server-port: 8091 
+SpringBoot, MyBatis, H2 ( or PostgreSQL ), ReactJS( or GWT ), Gradle, server-port: 8091 
 
 #Task Controller:
 
@@ -35,10 +35,14 @@ curl -X DELETE http://localhost:8091/delete/4
 
 Перед стартом приложeния выполнить date.sql (Hibernate отсутствует, H2 при старте не заполняется автоматически).
 
-фронтентд: cd src, cd main, cd webapp, выполнить yarn install, 
+фронтентд #1 ReactJS: cd src, cd main, cd webapp, выполнить yarn install, 
 
 запустить сервер: yarn start
 
 
 
+фронтентд #2 GWT:
+
 ./gradlew clean build
+
+java -jar build/libs/task-list-0.0.1-SNAPSHOT.jar

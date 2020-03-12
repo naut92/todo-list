@@ -3,11 +3,21 @@ server:
 spring:
   datasource:
     #<------H2-------------->
-    platform: h2
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:~/task_db;DB_CLOSE_ON_EXIT=FALSE;
+    #platform: h2
+    #driverClassName: org.h2.Driver
+    #url: jdbc:h2:~/task_db;DB_CLOSE_ON_EXIT=FALSE;
 
-  h2:
-    console:
-      enabled: true
-      path: /h2
+    #<------Postgres-------------->
+    platform: postgresql
+    driverClassName: org.postgresql.Driver
+    #<----- without К8s ---->
+    url: jdbc:postgresql://localhost:5432/task_db DB_CLOSE_DELAY=-1; DB_CLOSE_ON_EXIT=FALSE
+    username: postgres
+    password: postgres
+
+    initialization-mode: always
+
+  #h2:
+   # console:
+    #  enabled: true
+     # path: /h2

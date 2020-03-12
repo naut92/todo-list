@@ -1,13 +1,13 @@
-package com.consul_media.task_list;
+package com.consul_media.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+//@EnableScheduling
 public class TaskListApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TaskListApplication.class, args);
 	}
-
 }

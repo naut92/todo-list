@@ -1,7 +1,7 @@
-package com.consul_media.task_list.controller;
+package com.consul_media.server.controller;
 
-import com.consul_media.task_list.mappers.TaskMapper;
-import com.consul_media.task_list.model.Task;
+import com.consul_media.server.mappers.TaskMapper;
+import com.consul_media.server.model.Task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

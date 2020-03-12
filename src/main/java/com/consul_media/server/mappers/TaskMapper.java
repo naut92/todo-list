@@ -1,6 +1,6 @@
-package com.consul_media.task_list.mappers;
+package com.consul_media.server.mappers;
 
-import com.consul_media.task_list.model.Task;
+import com.consul_media.server.model.Task;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

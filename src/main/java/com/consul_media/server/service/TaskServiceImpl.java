@@ -1,8 +1,7 @@
-package com.consul_media.task_list.service;
+package com.consul_media.server.service;
 
-
-import com.consul_media.task_list.mappers.TaskMapper;
-import com.consul_media.task_list.model.Task;
+import com.consul_media.server.mappers.TaskMapper;
+import com.consul_media.server.model.Task;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.slf4j.Logger;
@@ -20,7 +19,7 @@ public class TaskServiceImpl implements TaskMapper {
     private SqlSession session;
     private TaskMapper mapper;
 
-    public TaskServiceImpl(SqlSessionFactory sqlSessionFactory) {
+    public TaskServiceImpl(/*SqlSessionFactory sqlSessionFactory*/) {
         this.sqlSessionFactory = MyBatisConnectionFactory.getSqlSessionFactory();
     }
 

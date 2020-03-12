@@ -1,6 +1,6 @@
-package com.consul_media.task_list.service;
+package com.consul_media.server.service;
 
-import com.consul_media.task_list.mappers.TaskMapper;
+import com.consul_media.server.mappers.TaskMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Service;
@@ -22,7 +22,6 @@ public class MyBatisConnectionFactory {
 	static {
 		try {
 			String resource = System.getProperty("user.dir") + "/src/main/resources/mybatis-config.xml";
-
 			Reader reader = new FileReader(resource);
 			if (sqlSessionFactory == null) {
 				sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);

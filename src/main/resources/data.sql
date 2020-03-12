@@ -1,7 +1,8 @@
 DROP TABLE IF EXISTS task;
 
-create table task(
-    id INT AUTO_INCREMENT  PRIMARY KEY,
+create table if not exists task(
+    id SERIAL NOT NULL UNIQUE,
+    --id INT AUTO_INCREMENT  PRIMARY KEY,
     heading VARCHAR(250),
     text VARCHAR(250),
     date_added VARCHAR(250),
