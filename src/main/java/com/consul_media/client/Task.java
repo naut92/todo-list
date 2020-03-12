@@ -12,8 +12,4 @@ public class Task {
     private String date_added;
     private String edit_date;
     private String status;
-
-    public String getText() {
-        return text;
-    }
 }

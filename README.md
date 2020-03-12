@@ -39,6 +39,8 @@ curl -X DELETE http://localhost:8091/delete/4
 
 запустить сервер: yarn start
 
+localhost:3000
+
 
 
 фронтентд #2 GWT:
@@ -46,3 +48,5 @@ curl -X DELETE http://localhost:8091/delete/4
 ./gradlew clean build
 
 java -jar build/libs/task-list-0.0.1-SNAPSHOT.jar
+
+localhost:8091
