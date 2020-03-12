@@ -85,7 +85,7 @@
 
     <g:HTMLPanel addStyleNames="{style.center}">
         <div class="{style.todo-panel}">
-            <h1 class="{style.header}">Todos</h1>
+            <h1 class="{style.header}">доска TODO</h1>
 
             <g:FlowPanel ui:field="taskList">
             </g:FlowPanel>

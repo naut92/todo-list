@@ -1,6 +1,7 @@
 package com.consul_media.client;
 
 
+import com.consul_media.shared.Task;
 import org.fusesource.restygwt.client.MethodCallback;
 import org.fusesource.restygwt.client.RestService;
 

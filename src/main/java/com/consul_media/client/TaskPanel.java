@@ -1,5 +1,6 @@
 package com.consul_media.client;
 
+import com.consul_media.shared.Task;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.uibinder.client.UiBinder;
